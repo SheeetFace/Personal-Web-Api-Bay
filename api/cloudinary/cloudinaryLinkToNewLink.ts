@@ -19,6 +19,7 @@ export const cloudinaryLinkToNewLink= async(imageUrl:string)=>{
         });
 
         const data = await response.json();
+        console.log('Cloudinary response:', data);
 
         if(data.secure_url){
             return data.secure_url.replace(/\.[^.]+$/, '.webp');

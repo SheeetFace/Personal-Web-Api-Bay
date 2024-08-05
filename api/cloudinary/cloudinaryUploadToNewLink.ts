@@ -16,6 +16,7 @@ export const cloudinaryUploadToNewLink = async(base64:string)=>{
       })
 
       const data = await response.json();
+      console.log('Cloudinary response:', data);
       return data.secure_url||null;
 
     }catch(error){
