@@ -1,6 +1,6 @@
 # 🌊 Personal Web API Bay
 
-## 🚀 My Personal Web API Hub
+## 🗃 My Personal Web API Hub
 
 This project is a personal web application designed to manage and interact with various APIs. The goal is to create a centralized platform for handling different types of data and APIs, making it easier to manage and extend functionalities in the future.
 
@@ -26,3 +26,5 @@ The main idea behind this project is to create a one-stop-shop for managing all 
 - 🆕 New Features: Throw in some extra functionalities to make the platform even more versatile.
 - 🔐 Beef Up Security: Implement authentication and authorization to keep data and APIs safe.
 - 📱 User Interface: Cook up a more intuitive and responsive interface.
+
+# 👉 [Check out the project here!](https://personal-web-api-bay.vercel.app/) 👈

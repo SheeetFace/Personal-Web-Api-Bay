@@ -2,7 +2,7 @@
 export const cloudinaryLinkToNewLink= async(imageUrl:string)=>{
 
     const CLOUD_NAME = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || '';
-    const UPLOAD_PRESET = process.env.NEXT_PUBLIC_CLOUDINARY_PRESET || '';
+    const UPLOAD_PRESET = process.env.NEXT_PUBLIC_CLOUDINARY_PRESET_LINK || '';
 
     const url = `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/upload`;
 
@@ -22,7 +22,7 @@ export const cloudinaryLinkToNewLink= async(imageUrl:string)=>{
         console.log('Cloudinary response:', data);
 
         if(data.secure_url){
-            return data.secure_url.replace(/\.[^.]+$/, '.webp');
+            return data.secure_url.replace(/\.[^.]+$/, '.webp'); // :)
         }else{
             console.error('Error in Cloudinary response:', data);
             return imageUrl;
