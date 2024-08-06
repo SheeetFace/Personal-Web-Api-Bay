@@ -1,4 +1,5 @@
 import { Metadata, Viewport } from "next";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import clsx from "clsx";
 
@@ -49,6 +50,7 @@ export default function RootLayout({children}:{children: React.ReactNode}){
             <BreadcrumbsMain />
             <main className="container pt-16 flex-grow px-6"> 
               {children}
+              <SpeedInsights />
             </main>
             <Footer/>
           </div>
